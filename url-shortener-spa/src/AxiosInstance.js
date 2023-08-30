@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance with default headers
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: 'https://url-shortener-vuxr.onrender.com/api',
 });
 
 // Add an interceptor to include the token in requests

@@ -96,12 +96,12 @@ function AuthForm() {
     try {
       if (isRegistering) {
         // User is registering
-        await axios.post('http://localhost:3000/api/register', { username, password, name, email });
+        await axios.post('https://url-shortener-vuxr.onrender.com/api/register', { username, password, name, email });
         setMessage('Registration successful. Please log in.');
         setIsRegistering(false); // Switch back to login mode
       } else {
         // User is logging in
-        const response = await axios.post('http://localhost:3000/api/login', { username, password });
+        const response = await axios.post('https://url-shortener-vuxr.onrender.com/api/login', { username, password });
         const authToken = response.data.token;
         localStorage.setItem('authToken', authToken);
         setMessage(`Welcome, ${username}!`);

@@ -93,7 +93,7 @@ function ShortenForm() {
       {shortUrl && (
         <ShortenedUrl> {/* Use the styled ShortenedUrl component */}
           <span>Shortened URL:</span> 
-          <a href={`http://localhost:3000/api/${shortUrl}`} target="_blank" rel="noopener noreferrer">
+          <a href={`https://url-shortener-vuxr.onrender.com/api/${shortUrl}`} target="_blank" rel="noopener noreferrer">
             {shortUrl}
           </a>
         </ShortenedUrl>
