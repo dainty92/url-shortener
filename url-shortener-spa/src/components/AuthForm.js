@@ -116,7 +116,7 @@ function AuthForm() {
   return (
     <div>
       <FormWrapper>
-        <FormTitle>Login/SignUp</FormTitle>
+        <FormTitle>LogIn/SignUp</FormTitle>
         <form onSubmit={handleSubmit}>
             <Input
             type="text"
