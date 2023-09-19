@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Home from './pages/Home';
 import Auth from './pages/Auth';
+import './App.css';
 
 const AppWrapper = styled.div`
   font-family: Arial, sans-serif;
@@ -13,7 +14,7 @@ const AppHeader = styled.header`
   background-color: #007bff;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 `;
 
 const AppTitle = styled.h1`
@@ -26,7 +27,7 @@ function App() {
     <Router>
       <AppWrapper>
         <AppHeader>
-          <AppTitle>ShortLinkify - URL Shortener</AppTitle>
+            <AppTitle>ShortLinkify - URL Shortener</AppTitle>
         </AppHeader>
         <Routes> {/* Wrap your routes in a Routes component */}
           <Route path="/" element={<Auth />} /> {/* Use the element prop */}
